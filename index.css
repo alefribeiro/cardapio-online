@@ -112,11 +112,12 @@ footer{
   justify-content: center;
 }
 
-#btn {
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
+    border-radius: 3px;
     bottom: 10px;
     right: 10px;
     width: 50px;
@@ -125,20 +126,30 @@ footer{
     text-decoration: none;
     border: none
 }
-#btn::after {
-  content: "↑";
+.btn::after {
+  content: "▲";
   font-size: 3.2rem;
   font-weight: bold;
   color: aliceblue;
   transition: margin-top 250ms;
 }
-#btn:hover::after {
+.btn:hover::after {
   margin-top:-8px;
 }
 
+.invisible{
+  display: none;
+}
 
- @media(max-width: 280px){
+@media(max-width: 400px){
+  .btn{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media(max-width: 280px){
     html{
       font-size: 50%;
     }
- }
+}
