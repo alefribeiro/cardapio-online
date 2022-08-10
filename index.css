@@ -5,12 +5,13 @@
 
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body{
   font-size: 1.6rem;
-  background-color: #FFEDD5;
-  font-family: 'Roboto', sans-serif;
+  background-color: cadetblue;
+  font-family: 'Lato', sans-serif;
 }
 
 ul{
@@ -18,9 +19,8 @@ ul{
 }
 
 h1, h2, h3, .price{
-  font-family: 'Roboto Serif';
   text-transform: uppercase;
-  color: #2D2C2A;
+  color: #ffffff;
 }
 
 header{
@@ -34,21 +34,27 @@ section, header{
   margin: 0 auto;
 }
 
-header h1{
-  margin-bottom: 4px;
-  font-size: 2.8rem;
-  list-style: 3.3rem;
+header img{
+  width: 25rem;
 }
 
+/* header h1{
+  margin-bottom: 0px;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  
+} */
+
 header h1 span{
-  color: #995000;
+  color: rgba(4, 4, 184, 0.7);
+  font-weight: 700;
 }
 
 header p{
   font-size: 1.4rem;
   line-height: 1.6rem;
 
-  color: rgba(0, 0, 0, 0.7)
+  color: rgba(255, 255, 255, 0.7)
 }
 
 section{
@@ -56,7 +62,7 @@ section{
 }
 
 section h2{
-  background-color: #FED7AA;
+  background-color: rgba(4, 4, 184, 0.7);
   padding: 8px 16px;
   text-align: center;
   margin-bottom: 24px;
@@ -78,6 +84,7 @@ ul li{
 
  li strong{
    font-size: 1.6rem;
+   color: white;
  }
 
  .details h3{
@@ -87,11 +94,47 @@ ul li{
  }
 
  .details p{
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 1.4rem;
   line-height: 2.1rem;
 }
- 
+
+footer{
+  margin-top: 5rem;
+  background: rgba(4, 4, 184,0.7);
+  color: white;
+  height: 4rem;
+  padding: 20px;
+  font-size: 1.3rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(4, 4, 184, 0.274);
+    text-decoration: none;
+    border: none
+}
+#btn::after {
+  content: "↑";
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: aliceblue;
+  transition: margin-top 250ms;
+}
+#btn:hover::after {
+  margin-top:-8px;
+}
 
 
  @media(max-width: 280px){
