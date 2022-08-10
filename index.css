@@ -128,7 +128,7 @@ footer{
 }
 .btn::after {
   content: "▲";
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: aliceblue;
   transition: margin-top 250ms;
