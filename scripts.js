@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     btn.classList.add("invisible")
 })
 
-addEventListener('scroll', (e) =>{
+addEventListener('scroll', () =>{
 
     if(window.scrollY === 0){
         btn.classList.add("invisible")
